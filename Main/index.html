@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevFast</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/lucide.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-content">
+                <!-- Logo -->
+                <a href="index.html" class="logo-link">
+                    <div class="logo-icon">
+                        <i data-lucide="code-2"></i>
+                    </div>
+                    <span class="logo-text">DevFast</span>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <div class="nav-menu desktop-menu">
+                    <a href="index.html" class="nav-link active">
+                        <i data-lucide="home"></i>
+                        <span>Home</span>
+                    </a>
+                    <a href="templates.html" class="nav-link">
+                        <i data-lucide="code"></i>
+                        <span>Templates</span>
+                    </a>
+                    <a href="community.html" class="nav-link">
+                        <i data-lucide="users"></i>
+                        <span>Community</span>
+                    </a>
+                    <a href="resources.html" class="nav-link">
+                        <i data-lucide="book-open"></i>
+                        <span>Resources</span>
+                    </a>
+                    <a href="projects.html" class="nav-link">
+                        <i data-lucide="folder"></i>
+                        <span>Projects</span>
+                    </a>
+                </div>
+
+                <!-- Right Side Actions -->
+                <div class="nav-actions desktop-menu">
+                    <button class="nav-btn">
+                        <i data-lucide="search"></i>
+                    </button>
+                    <button class="nav-btn">
+                        <i data-lucide="bell"></i>
+                    </button>
+                    <button class="btn btn-outline">
+                        <i data-lucide="user"></i>
+                        Sign In
+                    </button>
+                    <button class="btn btn-primary">
+                        contribute with FTs Project
+                    </button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="mobile-menu-toggle">
+                    <button class="mobile-toggle-btn" onclick="toggleMobileMenu()">
+                        <i data-lucide="menu" class="menu-icon"></i>
+                        <i data-lucide="x" class="close-icon hidden"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="mobile-menu hidden" id="mobileMenu">
+                <div class="mobile-nav-links">
+                    <a href="index.html" class="mobile-nav-link active">
+                        <i data-lucide="home"></i>
+                        <span>Home</span>
+                    </a>
+                    <a href="templates.html" class="mobile-nav-link">
+                        <i data-lucide="code"></i>
+                        <span>Templates</span>
+                    </a>
+                    <a href="community.html" class="mobile-nav-link">
+                        <i data-lucide="users"></i>
+                        <span>Community</span>
+                    </a>
+                    <a href="resources.html" class="mobile-nav-link">
+                        <i data-lucide="book-open"></i>
+                        <span>Resources</span>
+                    </a>
+                    <a href="projects.html" class="mobile-nav-link">
+                        <i data-lucide="folder"></i>
+                        <span>Projects</span>
+                    </a>
+                </div>
+                <div class="mobile-nav-actions">
+                    <button class="btn btn-outline mobile-btn">
+                        <i data-lucide="user"></i>
+                        Sign In
+                    </button>
+                    <button class="btn btn-primary mobile-btn">
+                        Join Community
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-bg-elements">
+                <div class="bg-gradient"></div>
+                <div class="bg-circle bg-circle-1"></div>
+                <div class="bg-circle bg-circle-2"></div>
+            </div>
+            
+            <div class="container">
+                <div class="hero-content">
+                    <!-- Badge -->
+                    <div class="hero-badge">
+                        <i data-lucide="sparkles"></i>
+                        <span>selamat datang di Developer Community</span>
+                        <i data-lucide="heart" class="heart-icon"></i>
+                    </div>
+
+                    <!-- Main Heading -->
+                    <div class="hero-heading">
+                        <h1 class="hero-title">
+                            mulai
+                            <span class="gradient-text">Code Harianmu</span><br>
+                            Yang Luar Biasa
+                        </h1>
+                        <p class="hero-description">
+                            Temukan ribuan templat profesional, bergabunglah dengan komunitas pengembang yang berkembang pesat,
+                            dan percepat pembelajaran Anda dengan proyek langsung yang dirancang untuk pemula.
+                        </p>
+                    </div>
+
+                    <!-- Stats -->
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <i data-lucide="code-2"></i>
+                            <span class="stat-number">100+</span>
+                            <span class="stat-label">Templates</span>
+                        </div>
+                        <div class="stat-item">
+                            <i data-lucide="users"></i>
+                            <span class="stat-number">2+</span>
+                            <span class="stat-label">Developers</span>
+                        </div>
+                        <div class="stat-item">
+                            <i data-lucide="star"></i>
+                            <span class="stat-number">1.9</span>
+                            <span class="stat-label">Rating</span>
+                        </div>
+                        <div class="stat-item">
+                            <i data-lucide="download"></i>
+                            <span class="stat-number">2+</span>
+                            <span class="stat-label">Downloads</span>
+                        </div>
+                    </div>
+
+                    <!-- CTA Buttons -->
+                    <div class="hero-actions">
+                        <a href="templates.html" class="btn btn-primary btn-lg hero-btn">
+                            <i data-lucide="zap"></i>
+                            Terusuri Templates
+                            <i data-lucide="arrow-right"></i>
+                        </a>
+                        <a href="community.html" class="btn btn-outline btn-lg">
+                            <i data-lucide="users"></i>
+                            Join Communitas
+                        </a>
+                    </div>
+
+                    <!-- Features Grid -->
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i data-lucide="code-2"></i>
+                            </div>
+                            <h3 class="feature-title">Templates siap pakai</h3>
+                            <p class="feature-description">
+                                Professional templates untuk Website Developer
+                            </p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon indigo">
+                                <i data-lucide="users"></i>
+                            </div>
+                            <h3 class="feature-title">Communitas aktif</h3>
+                            <p class="feature-description">
+                                Terhubung dengan sesama pengembang, berbagi proyek, dan dapatkan bantuan saat Anda membutuhkannya.
+                            </p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon gradient">
+                                <i data-lucide="book-open"></i>
+                            </div>
+                            <h3 class="feature-title">Pelajari Resources</h3>
+                            <p class="feature-description">
+                                Tutorial, panduan, dan dokumentasi komprehensif untuk membantu Anda berkembang.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Templates Section -->
+        <section class="featured-templates">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="section-header">
+                    <div class="section-badge">
+                        <i data-lucide="trending-up"></i>
+                        <span>Fiture Templates</span>
+                    </div>
+                    <h2 class="section-title">Template UI Popluer</h2>
+                    <p class="section-description">
+                        Templat profesional pilihan dengan kode bersih, desain modern, dan dokumentasi komprehensif.    
+                    </p>
+                </div>
+
+                <!-- Templates Grid -->
+                <div class="templates-grid" id="featuredTemplatesGrid">
+                    <!-- Templates will be loaded by JavaScript -->
+                </div>
+
+                <!-- CTA -->
+                <div class="section-cta">
+                    <a href="templates.html" class="btn btn-outline btn-lg">
+                        Lihat Semua
+                        <i data-lucide="arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Community Stats Section -->
+        <section class="community-stats">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="section-header">
+                    <div class="section-badge gradient">
+                        <i data-lucide="trending-up"></i>
+                        <span>Dampak Komunitas</span>
+                    </div>
+                    <h2 class="section-title">Tumbuh Bersama</h2>
+                    <p class="section-description">
+                        Bergabunglah dengan ribuan pengembang yang membangun, belajar, dan berbagi proyek menakjubkan setiap hari.
+                    </p>
+                </div>
+
+                <!-- Stats Grid -->
+                <div class="stats-grid" id="communityStatsGrid">
+                    <!-- Stats will be loaded by JavaScript -->
+                </div>
+
+                <!-- Bottom CTA -->
+                <div class="community-cta">
+                    <div class="cta-content">
+                        <h3 class="cta-title">siap untuk gabung Komunitas?</h3>
+                        <p class="cta-description">
+                            Terhubung dengan pengembang lain, bagikan proyek Anda, dapatkan umpan balik, dan kembangkan keterampilan Anda bersama.
+                        </p>
+                        <div class="cta-actions">
+                            <button class="btn btn-white">Bua Akun</button>
+                            <button class="btn btn-outline-white">Pelajari yang lain nya</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Learning Paths Section -->
+        <section class="learning-paths">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="section-header">
+                    <div class="section-badge purple">
+                        <i data-lucide="target"></i>
+                        <span>Stukture pembelajaran</span>
+                    </div>
+                    <h2 class="section-title">Belajar untuk Semua Orang</h2>
+                    <p class="section-description">
+                        Ikuti jalur pembelajaran kami yang disusun dengan cermat untuk membawa Anda dari pemula menjadi pengembang profesional.
+                    </p>
+                </div>
+
+                <!-- Learning Paths Grid -->
+                <div class="learning-grid" id="learningPathsGrid">
+                    <!-- Learning paths will be loaded by JavaScript -->
+                </div>
+
+                <!-- Additional Features -->
+                <div class="learning-features">
+                    <div class="learning-feature">
+                        <div class="learning-feature-icon blue">
+                            <i data-lucide="book-open"></i>
+                        </div>
+                        <h3 class="learning-feature-title">Pelajaran interaktif</h3>
+                        <p class="learning-feature-description">
+                            Belajar sambil melakukan latihan pengkodean interaktif dan proyek dunia nyata.
+                        </p>
+                    </div>
+                    <div class="learning-feature">
+                        <div class="learning-feature-icon indigo">
+                            <i data-lucide="users"></i>
+                        </div>
+                        <h3 class="learning-feature-title">Pembelajaran sederjat</h3>
+                        <p class="learning-feature-description">
+                            Terhubung dengan sesama pelajar, berbagi kemajuan, dan belajar bersama.
+                        </p>
+                    </div>
+                    <div class="learning-feature">
+                        <div class="learning-feature-icon purple">
+                            <i data-lucide="target"></i>
+                        </div>
+                        <h3 class="learning-feature-title">Jalur Pribadi</h3>
+                        <p class="learning-feature-description">
+                            Sesuaikan perjalanan belajar Anda berdasarkan tujuan dan pengalaman Anda.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- CTA -->
+                <div class="section-cta">
+                    <a href="resources.html" class="btn btn-outline btn-lg indigo">
+                        Jelajahi Semua Sumber Daya
+                        <i data-lucide="arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular Projects Section -->
+        <section class="popular-projects">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="section-header">
+                    <div class="section-badge orange">
+                        <i data-lucide="flame"></i>
+                        <span>Pameran Komunitas</span>
+                    </div>
+                    <h2 class="section-title">Project Popluer</h2>
+                    <p class="section-description">
+                        Temukan proyek-proyek luar biasa yang dibangun oleh anggota komunitas kami. Dapatkan inspirasi dan belajar dari implementasi di dunia nyata.
+                    </p>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid" id="popularProjectsGrid">
+                    <!-- Projects will be loaded by JavaScript -->
+                </div>
+
+                <!-- Bottom CTA -->
+                <div class="projects-cta">
+                    <div class="cta-content">
+                        <h3 class="cta-title">bagikan Project Mu</h3>
+                        <p class="cta-description">
+                            Sudah membangun sesuatu yang luar biasa? Bagikan dengan komunitas dan dapatkan umpan balik, peluang kolaborasi, dan pengakuan.
+                        </p>
+                        <div class="cta-actions">
+                            <button class="btn btn-white">Submit Project</button>
+                            <a href="projects.html" class="btn btn-outline-white">
+                                Lihat Semua Project
+                                <i data-lucide="arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Scroll to Top Button -->
+        <button class="scroll-to-top" onclick="scrollToTop()">
+            <i data-lucide="arrow-up"></i>
+        </button>
+        <div class="footer-container">
+            <!-- Konten Utama Footer -->
+            <div class="footer-content">
+            <div class="footer-grid">
+                <!-- Bagian Brand -->
+                <div class="footer-brand">
+                <div class="footer-logo">
+                    <div class="footer-logo-icon">
+                    <i data-lucide="code"></i>
+                    </div>
+                    <span class="footer-logo-text">DevFast</span>
+                </div>
+                <p class="footer-description">
+                    Memberdayakan developer pemula dengan template profesional, komunitas aktif, dan sumber belajar lengkap.
+                </p>
+                <div class="footer-social">
+                    <a href="#" class="social-link">
+                    <i data-lucide="twitter"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                    <i data-lucide="github"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                    <i data-lucide="linkedin"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                    <i data-lucide="mail"></i>
+                    </a>
+                </div>
+                </div>
+
+                <!-- Tautan Cepat -->
+                <div class="footer-links">
+                <h3 class="footer-links-title">Tautan Cepat</h3>
+                <ul class="footer-links-list">
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="templates.html">Template</a></li>
+                    <li><a href="community.html">Komunitas</a></li>
+                    <li><a href="resources.html">Sumber Belajar</a></li>
+                    <li><a href="projects.html">Proyek</a></li>
+                </ul>
+                </div>
+
+                <!-- Sumber Daya -->
+                <div class="footer-links">
+                <h3 class="footer-links-title">Sumber Daya</h3>
+                <ul class="footer-links-list">
+                    <li><a href="#">Dokumentasi</a></li>
+                    <li><a href="#">Tutorial</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Referensi API</a></li>
+                    <li><a href="#">Pusat Bantuan</a></li>
+                </ul>
+                </div>
+
+                <!-- Kontak -->
+                <div class="footer-contact">
+                <h3 class="footer-contact-title">Kontak</h3>
+                <div class="footer-contact-info">
+                    <div class="contact-item">
+                    <i data-lucide="map-pin"></i>
+                    <div>
+                        <p>FTs Company</p>
+                        <p>Bandung , Indonesia</p>
+                    </div>
+                    </div>
+                    <div class="contact-item">
+                    <i data-lucide="phone"></i>
+                    <p>+62 882-0012-89177</p>
+                    </div>
+                    <div class="contact-item">
+                    <i data-lucide="mail"></i>
+                    <p>nlfts.etc@gmail.com</p>
+                    </div>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="newsletter">
+                    <h4 class="newsletter-title">Tetap Terupdate</h4>
+                    <div class="newsletter-form">
+                    <input type="email" placeholder="Masukkan email Anda" class="newsletter-input">
+                    <button class="newsletter-btn">Langganan</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+
+            <!-- Baris Bawah -->
+            <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <div class="footer-copyright">
+                <span>&copy; 2024 DevFast. Semua hak cipta dilindungi.</span>
+                </div>
+                <div class="footer-made-with">
+                <span>Dibuat dengan</span>
+                <i data-lucide="heart" class="heart-fill"></i>
+                <span>Kina`SaQina</span>
+                </div>
+                <div class="footer-legal">
+                <a href="#">Kebijakan Privasi</a>
+                <a href="#">Syarat Layanan</a>
+                <a href="#">Kebijakan Cookie</a>
+                </div>
+            </div>
+            </div>
+        </div>
+        </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

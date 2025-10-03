@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyek - DevHub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/lucide.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+    <!-- Navigasi -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-content">
+                <!-- Logo -->
+                <a href="index.html" class="logo-link">
+                    <div class="logo-icon">
+                        <i data-lucide="code"></i>
+                    </div>
+                    <span class="logo-text">DevHub</span>
+                </a>
+
+                <!-- Navigasi Desktop -->
+                <div class="nav-menu desktop-menu">
+                    <a href="index.html" class="nav-link">
+                        <i data-lucide="home"></i>
+                        <span>Beranda</span>
+                    </a>
+                    <a href="templates.html" class="nav-link">
+                        <i data-lucide="code"></i>
+                        <span>Template</span>
+                    </a>
+                    <a href="community.html" class="nav-link">
+                        <i data-lucide="users"></i>
+                        <span>Komunitas</span>
+                    </a>
+                    <a href="resources.html" class="nav-link">
+                        <i data-lucide="book-open"></i>
+                        <span>Sumber Belajar</span>
+                    </a>
+                    <a href="projects.html" class="nav-link active">
+                        <i data-lucide="folder"></i>
+                        <span>Proyek</span>
+                    </a>
+                </div>
+
+                <!-- Aksi Sisi Kanan -->
+                <div class="nav-actions desktop-menu">
+                    <button class="nav-btn">
+                        <i data-lucide="search"></i>
+                    </button>
+                    <button class="nav-btn">
+                        <i data-lucide="bell"></i>
+                    </button>
+                    <button class="btn btn-outline">
+                        <i data-lucide="user"></i>
+                        Masuk
+                    </button>
+                    <button class="btn btn-primary">
+                        Gabung Komunitas
+                    </button>
+                </div>
+
+                <!-- Tombol Menu Mobile -->
+                <div class="mobile-menu-toggle">
+                    <button class="mobile-toggle-btn" onclick="toggleMobileMenu()">
+                        <i data-lucide="menu" class="menu-icon"></i>
+                        <i data-lucide="x" class="close-icon hidden"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Menu Mobile -->
+            <div class="mobile-menu hidden" id="mobileMenu">
+                <div class="mobile-nav-links">
+                    <a href="index.html" class="mobile-nav-link">
+                        <i data-lucide="home"></i>
+                        <span>Beranda</span>
+                    </a>
+                    <a href="templates.html" class="mobile-nav-link">
+                        <i data-lucide="code"></i>
+                        <span>Template</span>
+                    </a>
+                    <a href="community.html" class="mobile-nav-link">
+                        <i data-lucide="users"></i>
+                        <span>Komunitas</span>
+                    </a>
+                    <a href="resources.html" class="mobile-nav-link">
+                        <i data-lucide="book-open"></i>
+                        <span>Sumber Belajar</span>
+                    </a>
+                    <a href="projects.html" class="mobile-nav-link active">
+                        <i data-lucide="folder"></i>
+                        <span>Proyek</span>
+                    </a>
+                </div>
+                <div class="mobile-nav-actions">
+                    <button class="btn btn-outline mobile-btn">
+                        <i data-lucide="user"></i>
+                        Masuk
+                    </button>
+                    <button class="btn btn-primary mobile-btn">
+                        Gabung Komunitas
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Konten Utama -->
+    <main class="main-content">
+        <!-- Bagian Segera Hadir -->
+        <section class="hero-section">
+            <div class="hero-bg-elements">
+                <div class="bg-gradient"></div>
+                <div class="bg-circle bg-circle-1"></div>
+                <div class="bg-circle bg-circle-2"></div>
+            </div>
+            
+            <div class="container">
+                <div class="hero-content">
+                    <!-- Lencana -->
+                    <div class="hero-badge">
+                        <i data-lucide="folder"></i>
+                        <span>Galeri Proyek</span>
+                        <i data-lucide="sparkles"></i>
+                    </div>
+
+                    <!-- Judul Utama -->
+                    <div class="hero-heading">
+                        <h1 class="hero-title">
+                            <span class="gradient-text">Galeri Proyek</span><br>
+                            Segera Hadir
+                        </h1>
+                        <p class="hero-description">
+                            Kami sedang membangun platform di mana developer dapat memamerkan proyek luar biasa mereka, 
+                            mendapatkan masukan dari komunitas, dan menginspirasi yang lain.
+                        </p>
+                    </div>
+
+                    <!-- Pratinjau Fitur -->
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i data-lucide="upload"></i>
+                            </div>
+                            <h3 class="feature-title">Kirim Proyek</h3>
+                            <p class="feature-description">
+                                Pengiriman proyek mudah dengan screenshot, deskripsi, dan teknologi yang digunakan.
+                            </p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon indigo">
+                                <i data-lucide="star"></i>
+                            </div>
+                            <h3 class="feature-title">Penilaian & Ulasan</h3>
+                            <p class="feature-description">
+                                Sistem penilaian dari komunitas dengan ulasan dan masukan yang detail.
+                            </p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon gradient">
+                                <i data-lucide="trophy"></i>
+                            </div>
+                            <h3 class="feature-title">Proyek Unggulan</h3>
+                            <p class="feature-description">
+                                Proyek unggulan bulanan dan penghargaan untuk karya terbaik.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Tombol Notifikasi -->
+                    <div class="hero-actions">
+                        <button class="btn btn-primary btn-lg hero-btn" onclick="showNotifyDialog()">
+                            <i data-lucide="bell"></i>
+                            Beri Tahu Saya Saat Siap
+                            <i data-lucide="arrow-right"></i>
+                        </button>
+                        <a href="index.html" class="btn btn-outline btn-lg">
+                            <i data-lucide="arrow-left"></i>
+                            Kembali ke Beranda
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Tombol Scroll ke Atas -->
+        <button class="scroll-to-top" onclick="scrollToTop()">
+            <i data-lucide="arrow-up"></i>
+        </button>
+
+        <div class="footer-container">
+            <!-- Konten Utama Footer -->
+            <div class="footer-content">
+                <div class="footer-grid">
+                    <!-- Bagian Brand -->
+                    <div class="footer-brand">
+                        <div class="footer-logo">
+                            <div class="footer-logo-icon">
+                                <i data-lucide="code"></i>
+                            </div>
+                            <span class="footer-logo-text">DevHub</span>
+                        </div>
+                        <p class="footer-description">
+                            Memberdayakan developer pemula dengan template profesional, komunitas aktif, dan sumber belajar lengkap.
+                        </p>
+                        <div class="footer-social">
+                            <a href="#" class="social-link">
+                                <i data-lucide="twitter"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i data-lucide="github"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i data-lucide="linkedin"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i data-lucide="mail"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Tautan Cepat -->
+                    <div class="footer-links">
+                        <h3 class="footer-links-title">Tautan Cepat</h3>
+                        <ul class="footer-links-list">
+                            <li><a href="index.html">Beranda</a></li>
+                            <li><a href="templates.html">Template</a></li>
+                            <li><a href="community.html">Komunitas</a></li>
+                            <li><a href="resources.html">Sumber Belajar</a></li>
+                            <li><a href="projects.html">Proyek</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Sumber Belajar -->
+                    <div class="footer-links">
+                        <h3 class="footer-links-title">Sumber Belajar</h3>
+                        <ul class="footer-links-list">
+                            <li><a href="#">Dokumentasi</a></li>
+                            <li><a href="#">Tutorial</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Referensi API</a></li>
+                            <li><a href="#">Pusat Bantuan</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Kontak -->
+                    <div class="footer-contact">
+                        <h3 class="footer-contact-title">Kontak</h3>
+                        <div class="footer-contact-info">
+                            <div class="contact-item">
+                                <i data-lucide="map-pin"></i>
+                                <div>
+                                    <p>123 Jalan Developer</p>
+                                    <p>San Francisco, CA 94105</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i data-lucide="phone"></i>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                            <div class="contact-item">
+                                <i data-lucide="mail"></i>
+                                <p>hello@devhub.com</p>
+                            </div>
+                        </div>
+
+                        <!-- Newsletter -->
+                        <div class="newsletter">
+                            <h4 class="newsletter-title">Tetap Terupdate</h4>
+                            <div class="newsletter-form">
+                                <input type="email" placeholder="Masukkan email Anda" class="newsletter-input">
+                                <button class="newsletter-btn">Langganan</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bar Bawah -->
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <div class="footer-copyright">
+                        <span>&copy; 2024 DevHub. Semua hak cipta dilindungi.</span>
+                    </div>
+                    <div class="footer-made-with">
+                        <span>Dibuat dengan</span>
+                        <i data-lucide="heart" class="heart-fill"></i>
+                        <span>untuk developer</span>
+                    </div>
+                    <div class="footer-legal">
+                        <a href="#">Kebijakan Privasi</a>
+                        <a href="#">Syarat Layanan</a>
+                        <a href="#">Kebijakan Cookie</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        function showNotifyDialog() {
+            const email = prompt("Masukkan email Anda untuk mendapatkan notifikasi saat galeri proyek diluncurkan:");
+            if (email && email.includes('@')) {
+                alert("Terima kasih! Kami akan memberi tahu Anda di " + email + " saat galeri proyek siap.");
+            } else if (email) {
+                alert("Silakan masukkan alamat email yang valid.");
+            }
+        }
+    </script>
+</body>
+</html>

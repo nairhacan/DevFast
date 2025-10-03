@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lokasi Outlet - Burger Bangor</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container header-content">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">BB</div>
+        <div class="logo-text">
+          <h1>Burger Bangor</h1>
+          <p>Rasa Premium, Harga Rakyat</p>
+        </div>
+      </a>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="lokasi.html">Lokasi</a></li>
+          <li><a href="tentang.html">Tentang</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="cart-btn" onclick="toggleCart()" aria-label="Keranjang">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+          <span class="cart-badge">0</span>
+        </button>
+        <button class="mobile-menu-btn" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1>Lokasi Outlet</h1>
+      <p>Temukan outlet Burger Bangor terdekat dari lokasi Anda</p>
+    </div>
+  </section>
+
+  <!-- Location Content -->
+  <section>
+    <div class="container">
+      <!-- Search -->
+      <div class="search-box">
+        <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"></circle>
+          <path d="m21 21-4.35-4.35"></path>
+        </svg>
+        <input type="text" id="searchInput" placeholder="Cari berdasarkan kota atau alamat...">
+      </div>
+
+      <div class="location-grid">
+        <!-- Map Placeholder -->
+        <div class="map-placeholder">
+          <div class="map-marker"></div>
+          <div class="map-marker"></div>
+          <div class="map-marker"></div>
+          <div style="position: relative; z-index: 10; text-align: center;">
+            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#ea580c" stroke-width="2" style="margin: 0 auto 1rem;">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem;">Peta Lokasi</h3>
+            <p style="color: #6b7280; margin-bottom: 0.5rem;">Komponen peta akan ditampilkan di sini</p>
+            <p style="font-size: 0.875rem; color: #9ca3af;">(Google Maps Integration Ready)</p>
+          </div>
+        </div>
+
+        <!-- Outlet List -->
+        <div>
+          <div class="results-count" style="margin-bottom: 1rem;">
+            Ditemukan <span id="resultsCount">0</span> outlet
+          </div>
+          <div class="outlet-list" id="outletList"></div>
+          
+          <!-- No Results -->
+          <div id="noResults" style="display: none; text-align: center; padding: 2rem 1rem;">
+            <div style="width: 64px; height: 64px; background: #f3f4f6; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 0.75rem;">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.35-4.35"></path>
+              </svg>
+            </div>
+            <h3 style="font-size: 1.125rem; font-weight: 600; margin-bottom: 0.25rem;">Outlet tidak ditemukan</h3>
+            <p style="font-size: 0.875rem; color: #6b7280;">Coba kata kunci lain</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Info Banner -->
+      <div class="info-banner">
+        <h2>500+ Outlet di Seluruh Indonesia</h2>
+        <p style="color: #374151; margin-bottom: 1rem;">
+          Kami terus berkembang untuk melayani Anda dengan lebih baik. Outlet baru segera hadir di kota Anda!
+        </p>
+        <p style="font-size: 0.875rem; color: #6b7280;">
+          Belum menemukan outlet terdekat? Hubungi kami untuk informasi lebih lanjut.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <div class="logo" style="margin-bottom: 1rem;">
+            <div class="logo-icon">BB</div>
+            <div class="logo-text">
+              <h1 style="color: white; font-size: 1.25rem;">Burger Bangor</h1>
+            </div>
+          </div>
+          <p style="font-size: 0.875rem;">Rasa Bintang Lima, Harga Kaki Lima. Burger premium untuk semua kalangan sejak 2019.</p>
+        </div>
+
+        <div class="footer-section">
+          <h4>Menu Cepat</h4>
+          <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="lokasi.html">Lokasi Outlet</a></li>
+            <li><a href="tentang.html">Tentang Kami</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Kontak</h4>
+          <ul style="font-size: 0.875rem;">
+            <li style="display: flex; gap: 0.5rem;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fb923c" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              <span>+62 21 1234 5678</span>
+            </li>
+            <li style="display: flex; gap: 0.5rem;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fb923c" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <span>info@burgerbangor.id</span>
+            </li>
+            <li style="display: flex; gap: 0.5rem;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fb923c" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>Jakarta Barat, Indonesia</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Ikuti Kami</h4>
+          <div class="social-links">
+            <a href="#" class="social-icon" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Facebook">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Twitter">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+              </svg>
+            </a>
+          </div>
+          <p style="font-size: 0.75rem; color: #6b7280; margin-top: 1rem;">Dapatkan update promo dan menu terbaru</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Burger Bangor. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#">Kebijakan Privasi</a>
+          <a href="#">Syarat & Ketentuan</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cart Modal -->
+  <div class="cart-overlay" onclick="closeCart()"></div>
+  <div class="cart-modal">
+    <div class="cart-header">
+      <h2>Keranjang Belanja</h2>
+      <button class="close-cart" onclick="closeCart()" aria-label="Tutup">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    <div class="cart-body"></div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span class="cart-total-label">Total:</span>
+        <span class="cart-total-amount">Rp 0</span>
+      </div>
+      <button class="btn btn-primary checkout-btn">Checkout</button>
+      <p class="cart-note">*Checkout akan tersedia setelah integrasi backend</p>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast">
+    <div class="toast-title">Berhasil!</div>
+    <div class="toast-message">Item ditambahkan ke keranjang</div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+  <script>
+    let searchQuery = '';
+
+    function filterOutlets() {
+      let filtered = outlets;
+
+      if (searchQuery.trim()) {
+        const query = searchQuery.toLowerCase();
+        filtered = filtered.filter(outlet => 
+          outlet.name.toLowerCase().includes(query) ||
+          outlet.city.toLowerCase().includes(query) ||
+          outlet.address.toLowerCase().includes(query)
+        );
+      }
+
+      renderOutlets(filtered);
+    }
+
+    function renderOutlets(items) {
+      const outletList = document.getElementById('outletList');
+      const noResults = document.getElementById('noResults');
+      const resultsCount = document.getElementById('resultsCount');
+
+      resultsCount.textContent = items.length;
+
+      if (items.length === 0) {
+        outletList.style.display = 'none';
+        noResults.style.display = 'block';
+        return;
+      }
+
+      outletList.style.display = 'block';
+      noResults.style.display = 'none';
+
+      outletList.innerHTML = items.map(outlet => `
+        <div class="outlet-card">
+          <h3>${outlet.name}</h3>
+          <div class="outlet-info">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ea580c" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span class="outlet-city">${outlet.city}</span>
+          </div>
+          <p style="font-size: 0.875rem; color: #6b7280; margin-bottom: 0.5rem;">${outlet.address}</p>
+          <div class="outlet-info" style="margin-bottom: 1rem;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            <span>${outlet.phone}</span>
+          </div>
+          <a href="${outlet.mapsUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%; justify-content: center; text-decoration: none;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+            Arahkan ke Google Maps
+          </a>
+        </div>
+      `).join('');
+    }
+
+    // Search
+    document.getElementById('searchInput').addEventListener('input', (e) => {
+      searchQuery = e.target.value;
+      filterOutlets();
+    });
+
+    // Initial render
+    filterOutlets();
+  </script>
+</body>
+</html>

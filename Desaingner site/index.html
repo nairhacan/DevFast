@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CreativeStudio </title>
+    <meta name="description" content="Tim desainer kreatif yang berdedikasi menciptakan identitas visual yang kuat dan berdampak untuk bisnis Anda.">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <!-- Logo -->
+                <div class="logo">
+                    <h1 class="logo-text">CreativeStudio</h1>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#services" class="nav-link">Services</a>
+                    <a href="#portfolio" class="nav-link">Portfolio</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#blog" class="nav-link">Blog</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </nav>
+
+                <!-- CTA Button -->
+                <div class="cta-wrapper">
+                    <a href="#contact" class="cta-button">Start Project</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <nav class="nav-mobile" id="mobileNav">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#blog" class="nav-link">Blog</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#contact" class="cta-button mobile-cta">Start Project</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <!-- Background Elements -->
+        <div class="hero-bg"></div>
+        <div class="hero-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+
+        <div class="container">
+            <div class="hero-grid">
+                <!-- Left Content -->
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <i data-lucide="sparkles"></i>
+                        <span>Creative Design Studio</span>
+                    </div>
+                    
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            Design
+                            <span class="text-accent-1">That Speaks</span>
+                            <span class="text-accent-2">Your Vision</span>
+                        </h1>
+                        
+                        <p class="hero-description">
+                            Kami menciptakan identitas visual yang kuat dan berdampak untuk bisnis Anda. 
+                            Dari brand identity hingga digital marketing, kami wujudkan ide kreatif menjadi karya yang memukau.
+                        </p>
+                    </div>
+
+                    <div class="hero-buttons">
+                        <a href="#portfolio" class="cta-button primary">
+                            <span>Lihat Portfolio</span>
+                            <i data-lucide="arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="cta-button secondary">
+                            Mulai Konsultasi
+                        </a>
+                    </div>
+
+                    <!-- Stats -->
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <div class="stat-number">100+</div>
+                            <div class="stat-label">Proyek Selesai</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">Klien Puas</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">5</div>
+                            <div class="stat-label">Tahun Pengalaman</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Content - Visual Elements -->
+                <div class="hero-visual">
+                    <div class="service-cards">
+                        <div class="service-card card-1">
+                            <h3>Brand Identity</h3>
+                            <p>Logo & Visual Identity</p>
+                        </div>
+                        <div class="service-card card-2">
+                            <h3>Web Design</h3>
+                            <p>UI/UX & Development</p>
+                        </div>
+                        <div class="service-card card-3">
+                            <h3>Marketing</h3>
+                            <p>Campaign & Materials</p>
+                        </div>
+                        <div class="service-card card-4">
+                            <h3>Print Design</h3>
+                            <p>Brochure & Packaging</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-dot"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-header">
+                <h2 class="section-title">
+                    Layanan <span class="text-accent-1">Kreatif</span> Kami
+                </h2>
+                <p class="section-description">
+                    Kami menyediakan solusi desain lengkap untuk semua kebutuhan bisnis Anda. 
+                    Dari konsep hingga implementasi, kami pastikan setiap detail sempurna.
+                </p>
+            </div>
+
+            <!-- Services Grid -->
+            <div class="services-grid" id="servicesGrid">
+                <!-- Services will be populated by JavaScript -->
+            </div>
+
+            <!-- CTA Section -->
+            <div class="services-cta">
+                <div class="cta-box">
+                    <h3>Siap Memulai Proyek Kreatif?</h3>
+                    <p>Konsultasikan ide Anda dengan tim ahli kami. Dapatkan proposal dan estimasi gratis untuk proyek Anda.</p>
+                    <a href="#contact" class="cta-button large">Konsultasi Gratis Sekarang</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-header">
+                <h2 class="section-title">
+                    Portfolio <span class="text-accent-2">Kreatif</span>
+                </h2>
+                <p class="section-description">
+                    Jelajahi karya-karya terbaik kami yang telah membantu klien mencapai tujuan bisnis mereka 
+                    dengan solusi desain yang inovatif dan efektif.
+                </p>
+
+                <!-- Filter Buttons -->
+                <div class="filter-buttons" id="filterButtons">
+                    <button class="filter-btn active" data-filter="All">All</button>
+                    <button class="filter-btn" data-filter="Brand Identity">Brand Identity</button>
+                    <button class="filter-btn" data-filter="Web Design">Web Design</button>
+                    <button class="filter-btn" data-filter="UI/UX Design">UI/UX Design</button>
+                    <button class="filter-btn" data-filter="Marketing Materials">Marketing</button>
+                    <button class="filter-btn" data-filter="Print Design">Print Design</button>
+                </div>
+            </div>
+
+            <!-- Portfolio Grid -->
+            <div class="portfolio-grid" id="portfolioGrid">
+                <!-- Portfolio items will be populated by JavaScript -->
+            </div>
+
+            <!-- Load More Button -->
+            <div class="portfolio-actions">
+                <button class="cta-button">Lihat Lebih Banyak Portfolio</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <!-- About Header -->
+            <div class="about-header">
+                <div class="about-text">
+                    <h2 class="section-title">
+                        Tentang <span class="text-accent-1">CreativeStudio</span>
+                    </h2>
+                    <div class="about-content">
+                        <p>
+                            CreativeStudio adalah tim desainer kreatif yang berdedikasi untuk membantu bisnis 
+                            menciptakan identitas visual yang kuat dan berdampak. Dengan pengalaman lebih dari 
+                            5 tahun, kami telah membantu puluhan klien dari berbagai industri.
+                        </p>
+                        <p>
+                            Kami percaya bahwa desain yang baik tidak hanya tentang estetika, tetapi juga tentang 
+                            strategi, fungsionalitas, dan hasil bisnis yang terukur. Setiap proyek adalah 
+                            kesempatan untuk menciptakan sesuatu yang meaningful dan impactful.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="stats-grid" id="statsGrid">
+                    <!-- Stats will be populated by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Team Section -->
+            <div class="team-section">
+                <div class="section-header">
+                    <h3 class="section-title">
+                        Tim <span class="text-accent-3">Kreatif</span>
+                    </h3>
+                    <p class="section-description">
+                        Kenali para ahli di balik setiap karya kreatif yang kami hasilkan.
+                    </p>
+                </div>
+
+                <div class="team-grid" id="teamGrid">
+                    <!-- Team members will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-header">
+                <h2 class="section-title white">
+                    Kata <span class="text-accent-1">Klien</span>
+                </h2>
+                <p class="section-description white">
+                    Dengarkan testimoni dari klien-klien yang telah merasakan dampak positif 
+                    dari kolaborasi kreatif bersama kami.
+                </p>
+            </div>
+            <!-- Main Testimonial -->
+            <div class="testimonial-main" id="testimonialMain">
+                <!-- Main testimonial will be populated by JavaScript -->
+            </div>
+
+            <!-- Testimonial Indicators -->
+            <div class="testimonial-indicators" id="testimonialIndicators">
+                <!-- Indicators will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog-section">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-header">
+                <h2 class="section-title">
+                    Insights & <span class="text-accent-3">Tips</span>
+                </h2>
+                <p class="section-description">
+                    Dapatkan wawasan terbaru tentang tren desain, tips kreatif, dan strategi branding 
+                    yang dapat membantu mengembangkan bisnis Anda.
+                </p>
+            </div>
+
+            <!-- Blog Grid -->
+            <div class="blog-grid" id="blogGrid">
+                <!-- Blog posts will be populated by JavaScript -->
+            </div>
+
+            <!-- Newsletter -->
+            <div class="newsletter">
+                <div class="newsletter-content">
+                    <h3>Dapatkan Tips Desain Terbaru</h3>
+                    <p>Subscribe newsletter kami dan dapatkan insights, tips, dan tren desain terkini 
+                       langsung di inbox Anda setiap minggu.</p>
+                    
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Masukkan email Anda" id="newsletterEmail">
+                        <button class="cta-button" id="subscribeBtn">
+                            <span>Subscribe</span>
+                            <i data-lucide="arrow-right"></i>
+                        </button>
+                    </div>
+                    <p class="newsletter-note">Gratis, no spam, dan bisa unsubscribe kapan saja.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-header">
+                <h2 class="section-title">
+                    Mari <span class="text-accent-1">Berkolaborasi</span>
+                </h2>
+                <p class="section-description">
+                    Siap memulai proyek kreatif yang luar biasa? Hubungi kami untuk konsultasi gratis 
+                    dan diskusi mendalam tentang visi Anda.
+                </p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <div class="contact-form-header">
+                        <div class="form-icon">
+                            <i data-lucide="message-circle"></i>
+                        </div>
+                        <h3>Ceritakan Proyek Anda</h3>
+                    </div>
+
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Nama Lengkap *</label>
+                                <input type="text" id="name" name="name" required placeholder="Masukkan nama lengkap">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required placeholder="email@example.com">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="company">Nama Perusahaan</label>
+                            <input type="text" id="company" name="company" placeholder="Nama perusahaan (opsional)">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="service">Layanan yang Dibutuhkan *</label>
+                                <select id="service" name="service" required>
+                                    <option value="">Pilih layanan</option>
+                                    <option value="Brand Identity Design">Brand Identity Design</option>
+                                    <option value="Web Design & Development">Web Design & Development</option>
+                                    <option value="UI/UX Design">UI/UX Design</option>
+                                    <option value="Graphic Design">Graphic Design</option>
+                                    <option value="Marketing Materials">Marketing Materials</option>
+                                    <option value="Print Design">Print Design</option>
+                                    <option value="Konsultasi Strategi">Konsultasi Strategi</option>
+                                    <option value="Lainnya">Lainnya</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="budget">Estimasi Budget</label>
+                                <select id="budget" name="budget">
+                                    <option value="">Pilih range budget</option>
+                                    <option value="< 10 Juta">< 10 Juta</option>
+                                    <option value="10 - 25 Juta">10 - 25 Juta</option>
+                                    <option value="25 - 50 Juta">25 - 50 Juta</option>
+                                    <option value="50 - 100 Juta">50 - 100 Juta</option>
+                                    <option value="> 100 Juta">> 100 Juta</option>
+                                    <option value="Diskusi Lebih Lanjut">Diskusi Lebih Lanjut</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Pesan & Detail Proyek *</label>
+                            <textarea id="message" name="message" rows="6" required 
+                                placeholder="Ceritakan tentang proyek Anda, goals, timeline, dan detail lain yang perlu kami ketahui..."></textarea>
+                        </div>
+
+                        <button type="submit" class="cta-button large">
+                            <i data-lucide="send"></i>
+                            <span>Kirim Pesan</span>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <h3>Informasi Kontak</h3>
+                        <div class="contact-items">
+                            <a href="mailto:nlfts.etc@gmail.com" class="contact-item">
+                                <div class="contact-icon">
+                                    <i data-lucide="mail"></i>
+                                </div>
+                                <div>
+                                    <p class="contact-label">Email</p>
+                                    <p class="contact-value">nlfts.etc@gmail.com</p>
+                                </div>
+                            </a>
+                            <a href="tel:+622155550123" class="contact-item">
+                                <div class="contact-icon">
+                                    <i data-lucide="phone"></i>
+                                </div>
+                                <div>
+                                    <p class="contact-label">Telepon</p>
+                                    <p class="contact-value">+62 882-0012-89177</p>
+                                </div>
+                            </a>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i data-lucide="map-pin"></i>
+                                </div>
+                                <div>
+                                    <p class="contact-label">Alamat</p>
+                                    <p class="contact-value">Bandung, Indonesia</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i data-lucide="clock"></i>
+                                </div>
+                                <div>
+                                    <p class="contact-label">Jam Kerja</p>
+                                    <p class="contact-value">Senin - Jumat, 09:00 - 18:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Contact -->
+                    <div class="quick-contact">
+                        <h3>Kontak Cepat</h3>
+                        <div class="quick-buttons">
+                            <a href="mailto:nlfts.etc@gmail.com.id" class="cta-button">Email Langsung</a>
+                            <a href="https://wa.me/0882001289177" target="_blank" class="cta-button whatsapp">WhatsApp Chat</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <!-- Main Footer Content -->
+            <div class="footer-grid">
+                <!-- Company Info -->
+                <div class="footer-company">
+                    <div class="footer-logo">
+                        <h3>CreativeStudio</h3>
+                        <p>Tim desainer kreatif yang berdedikasi menciptakan identitas visual yang kuat 
+                           dan berdampak untuk bisnis Anda. Dari konsep hingga implementasi.</p>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="footer-contact">
+                        <a href="mailto:hello@creativestudio.id" class="footer-contact-item">
+                            <i data-lucide="mail"></i>
+                            NLFTs.etc@gmail.com
+                        </a>
+                        <a href="tel:+622155550123" class="footer-contact-item">
+                            <i data-lucide="phone"></i>
+                            ++62 882-0012-89177
+                        </a>
+                        <div class="footer-contact-item">
+                            <i data-lucide="map-pin"></i>
+                            Bandung barat, Indonesia
+                        </div>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="footer-social">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                            <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                            <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Services -->
+                <div class="footer-links">
+                    <h4>Layanan</h4>
+                    <ul>
+                        <li><a href="#services">Brand Identity Design</a></li>
+                        <li><a href="#services">Web Design & Development</a></li>
+                        <li><a href="#services">UI/UX Design</a></li>
+                        <li><a href="#services">Graphic Design</a></li>
+                        <li><a href="#services">Marketing Materials</a></li>
+                        <li><a href="#services">Print Design</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company -->
+                <div class="footer-links">
+                    <h4>Perusahaan</h4>
+                    <ul>
+                        <li><a href="#about">Tentang Kami</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#">Karir</a></li>
+                        <li><a href="#contact">Kontak</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Design Guidelines</a></li>
+                        <li><a href="#">Case Studies</a></li>
+                        <li><a href="#">Free Resources</a></li>
+                        <li><a href="#blog">Design Tips</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="footer-newsletter">
+                <div class="newsletter-info">
+                    <h4>Newsletter</h4>
+                    <p>Dapatkan tips desain, tren terbaru, dan insight kreatif langsung di inbox Anda.</p>
+                </div>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Masukkan email Anda" id="footerEmail">
+                    <button class="cta-button">Subscribe</button>
+                </div>
+            </div>
+
+            <!-- Bottom Footer -->
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2024 CreativeStudio & NLFTs.etc. All rights reserved. Made with ❤️ in Indonesia.</p>
+                </div>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Sitemap</a>
+                </div>
+            </div>
+
+            <!-- Back to Top -->
+            <div class="back-to-top">
+                <button class="cta-button" id="backToTop">Kembali ke Atas</button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
