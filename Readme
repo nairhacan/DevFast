@@ -4,3 +4,6 @@ Untuk pertanyaan atau saran, silakan hubungi:
 
 ---
 
+git add .
+git commit -m "pesan perubahan"
+git push
