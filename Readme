@@ -12,15 +12,18 @@ git push
 
 Jalankan perintah ini di terminal:
 
-```bash
+```
 git clone https://github.com/nairhacan/DevFast.git
 cd DevFast/Main
+```
+
+```
+git pull origin main
 
 ```
 
 ## Lihat Project Via URL:
-```url
 
+```
 https://nairhacan.github.io/DevFast
-
 ```
